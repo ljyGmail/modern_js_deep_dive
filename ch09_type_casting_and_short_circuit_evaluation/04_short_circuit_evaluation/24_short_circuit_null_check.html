@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>09-24</title>
+  </head>
+  <body>
+    <script>
+      var elem = null;
+      // elem이 null이나 undefined와 같은 Falsy 값이면 elem으로 평가되고
+      // elem이 Truthy 값이면 elem.value로 평가된다.
+      var value = elem && elem.value; // -> null
+      console.log(value);
+    </script>
+  </body>
+</html>
