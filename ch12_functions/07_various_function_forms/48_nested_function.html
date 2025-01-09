@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>12-48</title>
+  </head>
+  <body>
+    <script>
+      function outer() {
+        var x = 1;
+
+        // 중첩 함수
+        function inner() {
+          var y = 2;
+          // 외부 함수의 변수를 참조할 수 있다.
+          console.log(x + y);
+        }
+
+        inner();
+      }
+
+      outer();
+    </script>
+  </body>
+</html>
