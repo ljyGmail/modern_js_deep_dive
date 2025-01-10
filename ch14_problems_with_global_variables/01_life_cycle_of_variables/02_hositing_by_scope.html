@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>14-02</title>
+  </head>
+  <body>
+    <script>
+      var x = "global";
+
+      function foo() {
+        console.log(x); // undefined
+        var x = "local";
+      }
+
+      foo();
+      console.log(x); // global
+    </script>
+  </body>
+</html>
