@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>17-07</title>
+  </head>
+  <body>
+    <script>
+      // 생성자 홤수
+      function Circle(radius) {
+        // 인스턴스 초기화
+        this.radius = radius;
+        this.getDiameter = function () {
+          return 2 * this.radius;
+        };
+      }
+
+      // 인스턴스 생성
+      const circle1 = new Circle(5); // 반지금이 5인 Circle 객체를 생성
+    </script>
+  </body>
+</html>
