@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>17-01</title>
+  </head>
+  <body>
+    <script>
+      // 빈 객체의 생성
+      const person = new Object();
+
+      // 프로퍼티 추가
+      person.name = "Harry";
+      person.sayHello = function () {
+        console.log("Hi! My name is " + this.name);
+      };
+
+      console.log(person); // {name: 'Harry', sayHello: f}
+      person.sayHello(); // Hi! My name is Harry
+    </script>
+  </body>
+</html>
