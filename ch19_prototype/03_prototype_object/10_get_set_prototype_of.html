@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>19-10</title>
+  </head>
+  <body>
+    <script>
+      const obj = {};
+      const parent = { x: 1 };
+
+      // obj 객체의 프로토타입을 취득
+      console.log(Object.getPrototypeOf(obj)); // obj.__proto__;
+      // obj 객체의 프로토타입을 교체
+      Object.setPrototypeOf(obj, parent); // obj.__proto__ = parent;
+
+      console.log(obj.x); // 1
+    </script>
+  </body>
+</html>
